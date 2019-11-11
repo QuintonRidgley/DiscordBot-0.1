@@ -1,17 +1,16 @@
+# Minimal.py
+# Quinton Ridgley
+import os
 import discord
+from gotnev import load_dotnev
+
+load_dotnev()
+token = os.getenv('Your_Token_Here')
 
 client = discord.Client()
 
 @client.event
 async def on_ready():
-	print('We have logged in as {0.user}'.format(client))
-		
-@client.event
-async def on_message(Message):
-	if message.author == client.user:
-		return
-		
-	if message.content.startswith('$hello'):
-		await message.channel.send ('Hello!')
+	print (f'{client.user} has connected to Discord!')
 
-client.run ('Your-Token-Here')
+client.run(token)
