@@ -10,4 +10,4 @@ client = commands.Bot(command_prefix = '!')
 async def on_ready():
 	print('Bot is ready.')
 
-client.run('NjQzMTQ0NjIwNDYwNzM2NTEy.Xcj-Fg.DNd09lD3nTlg-RGslxd7QpD1DzU')
+client.run('MyToken')
